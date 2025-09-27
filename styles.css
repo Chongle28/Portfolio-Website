@@ -1,0 +1,321 @@
+
+
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+ --background-color: #eeeff1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Poppins", sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+  transition: 0.5s;
+}
+
+nav .left a {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: 0.5s;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav .right a {
+  font-size: 22px;
+  color: var(--text-color);
+  margin: 0 10px; 
+  transition: 0.5s;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+
+nav .right a:last-child {
+  font-size: 22px;
+  color: var(--background-color);
+  margin: 0 10px; 
+  background-color: var(--text-color);
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.5s;
+}
+
+nav .right a:span {
+  margin-left: 5px;
+}
+
+nav a:nth-child(1):hover {
+  color:  var(--background-color);
+  background-color: var(--text-color);
+}
+
+nav a:nth-child(2):hover {
+  color:  var(--background-color);
+  background-color: #0077B5;
+}
+
+nav .left:hover a {
+  color: var(--background-color);
+  background-color: var(--text-color);
+}
+
+nav .right a:last-child:hover {
+  background-color: #EA4335;
+}
+
+/* SECTION 1: Intro */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+}
+
+.intro .text {
+  flex: 5;
+}
+
+.intro .text h2 {
+  font-size: 45px;
+}
+.intro .text .links {
+  margin-top: 25px;
+}
+
+.intro .text .links a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+  color: var(--link-color);
+}
+
+
+.intro .headshot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.intro .headshot img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+/* SECTION 2: Skills */
+.skills-sections {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.skills-sections h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skills-sections .text {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.skills-sections .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-sections .cells .cell span {
+  font-size: 18px;
+}
+
+.skills-sections .cells .cell {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.skills-sections .cells .cell img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+/* SECTION 3: Contact */
+.contact-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.contact-section h2 {
+  font-size: 35px;
+}
+
+.contact-section .group {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-section .group .text {
+  margin-top: 20px;
+  flex: 3;
+}
+
+.contact-section .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section .group form input, .contact-section .group form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid var(--text-color);
+  background-color: transparent;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  resize: none;
+}
+
+.contact-section .group form button {
+  border: none;
+  font-family: "Poppins", sans-serif;
+  color: var(--background-color);
+  background-color: var(--link-color);
+  font-size: 16px;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-section .group form button:hover {
+  filter: brightness(0.9);
+}
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+  /*SECTION 1: Intro*/
+  .intro .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 740px) {
+  /*SECTION 1: Intro*/
+  .intro {
+    flex-direction: column-reverse;
+  }
+
+  .intro .headshot img {
+    width: 300px; 
+}
+  /* SECTION 3 Contact  */
+  .contact-section .group {
+    flex-direction: column;
+  } 
+}
+
+@media (max-width: 600px) {
+/*NAVBAR*/
+  nav {
+    padding: 0px 20px;
+  }
+
+  nav .right {
+    margin-top: 10px;
+  }
+
+  nav .right a {
+    font-size: 22px;
+    padding: 0;
+  }
+
+  nav .right a:last-child {
+    color:var(--text-color);
+    background-color: transparent;
+    padding: 0;
+
+  }
+  nav .right a span {
+    display: none;
+  }
+
+  nav .right a:hover {
+    background-color: transparent;
+    color:  #565b61;
+}
+
+  nav .right a:last-child:hover {
+    background-color: transparent;
+    color:  #565b61;
+  } 
+
+/*SECTION 1: Intro*/
+  .intro {
+    padding: 0 20px;
+  }
+
+  .intro .text h2 {
+    font-size: 30px;
+  }
+
+/* SECTION 2: Skills */
+.skills-sections {
+  padding: 0 20px;
+}
+
+.skills-sections .cells .cell span {
+  font-size: 16px;
+}
+
+ /* SECTION 3 Contact  */
+  .contact-section .group {
+   padding: 0 20px;
+  } 
+
+}
+

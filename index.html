@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css>
+
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  
+
+  <nav>
+    <div class="left">
+      <a href="/">
+        Ng Chong Le
+      </a>
+    </div>
+
+    <div class="right">
+      <a href="https://github.com/Chongle28" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/chong-le-ng-05779b380/" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+
+       <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ngchongleqwer@gmail.com&su=Hello." target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Gmail</span>
+      </a>
+
+    </div>
+
+  </nav>
+
+  <main>  
+    <!-- SECTION 1-->
+    <section class="intro"> 
+      <div class="text">
+        <h2>Hello, I'm Chong Le 🙌</h2>
+        <p>
+          I am an A level graduate that has confirmed a spot in the Computer Science course at Nanyang Technological University (NTU) for the year 2026. I am passionate about frontend and backend development. Moreover I am eager to learn and grow in this field through practical experiences. I have done projects using HTML, CSS, JavaScript, React.js and Node.js.
+        </p>
+      
+       
+      <div class="links">
+        <a href="#skills">
+          <i class="fa-solid fa-font-awesome"></i>
+          <span>Skills</span>
+        </a>
+
+        <a href="#contact">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+      </div>
+        <div class="headshot">
+        <img src="images css/Headshotphotome.jpg" alt="my headshot">
+      </div>
+
+     
+    </section>
+
+    <!-- SECTION 2-->
+    <section id="skills" class="skills-sections">
+      <h2>Skills</h2>
+      <div class="text">
+          I am comfortable using HTML, CSS, JavaScript, React.js and Node.js.
+      </div>
+
+      <div class="cells">
+
+         <div class="cell">
+          <img src="images css/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+
+         <div class="cell">
+          <img src="images css/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+
+        <div class="cell">
+          <img src="images css/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+
+         <div class="cell">
+          <img src="images css/node-logo.webp" alt="node logo">
+          <span>Node.js</span>
+        </div>
+
+         <div class="cell">
+          <img src="images css/react-logo.webp" alt="react logo">
+          <span>React.js</span>
+        </div>
+
+
+      </div>
+
+    </section>
+
+     <!-- SECTION 3-->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+      <div class="group">
+        <div class="text">
+          Fill in your email and contact me here! if you want to use Gmail instead, click the Gmail button on top. 
+        </div>
+
+      <form action="https://formspree.io/f/meorjzoe" method="POST" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="message">Message</label>
+        <textarea type="message" cols="30" rows="10" id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      </div>
+
+    </section>
+  </main>
+</body>
+</html>
